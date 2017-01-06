@@ -1,0 +1,45 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  -moz-background-size: 100% 1000px;
+  /* Firefox 3.6+ */
+  -webkit-background-size: 100% 1000px;
+  /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100% 1000px;
+  /* Opera 9.6+ */
+  background-size: 100% 100%;
+  /* Современные браузеры */
+  color: #ffffff;
+  background-color: grey;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+}
+
+.container-fluid {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font-size: 23px;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+#scale {
+  cursor: pointer;
+  color: #ad8961;
+}
+
+.link {
+  color: #81c0e4;
+}
+
+.link:hover {
+  color: #04406d;
+}
