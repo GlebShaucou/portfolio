@@ -38,6 +38,22 @@ const RSSProjects = {
         img_src: '',
         img_alt: 'Layouts webpage view'
     },
+
+    jqwidgets: {
+        title: 'Widgets with jQuery',
+        description: 'Some widgets for web-app with jQuery.',
+        href: './projects/rss/jqwidgets/index.html',
+        img_src: '',
+        img_alt: 'jQuery widgets view'
+    },
+
+    cssRecipes: {
+        title: 'Simple webpage',
+        description: 'Webpage on HTML and CSS.',
+        href: './projects/rss/css-recipes/index.html',
+        img_src: '',
+        img_alt: 'CSS webpage view'
+    }
 };
 
 export { RSSProjects };

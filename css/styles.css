@@ -38,7 +38,7 @@ a {
 
 .contacts {
     position: absolute;
-    top: 70px;
+    top: 40px;
     right: 100px;
 }
 
@@ -89,7 +89,6 @@ a {
 
 .list-inline {
     cursor: pointer;
-    /*margin: 0 0 0 20px;*/
 }
 
 .list-inline li {
@@ -104,12 +103,8 @@ a {
     text-align: center;
 }
 
-.section-title {
-
-}
-
-.section-description {
-
+.about-text {
+    width: 700px;
 }
 
 .copyrights {
