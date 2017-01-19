@@ -9,6 +9,29 @@ body {
     background-color: #dedede;
 }
 
+.header {
+    margin: 5px 0 0 0;
+}
+
+.header .container {
+    border-radius: 10px 10px 0 0; 
+}
+
+.header h4 {
+    color: #c90b0b;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url(../img/profile.jpg);
+    background-position: 5px -1px;
+    background-size: 200px 260px;
+    margin: 20px 30px 0 0;
+    float: left;
+}
+
 .container {
     max-width: 800px;
     background-color: #ffffff;
@@ -19,8 +42,8 @@ body {
 }
 
 .projects-img {
-    width: 200px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
     border: 1px solid #c5c5c5;
     margin-right: 20px;
 }
@@ -35,4 +58,11 @@ body {
 
 .footer .container {
     min-height: 100%;
+    border-radius: 0 0 10px 10px; 
+}
+
+.micro-clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
 }
