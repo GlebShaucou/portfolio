@@ -1,12 +1,4 @@
 const FCCProjects = {
-    twich_tv: {
-        title: 'Twitcher TV Status',
-        description: 'Provides interesting channel from twitch.',
-        href: './projects/fcc/twitch/index.html',
-        img_src: './img/fcc/twitch-tv.jpg',
-        img_alt: 'Twich TV Status site image'
-    },
-
     pomodoro_timer: {
         title: 'Pomodoro Timer',
         description: 'Organize your working day.',
@@ -45,7 +37,15 @@ const FCCProjects = {
         href: './projects/fcc/quotegen/index.html',
         img_src: './img/fcc/quotes-gen.jpg',
         img_alt: 'Quotes Generator site image'
-    },    
+    }, 
+
+    twich_tv: {
+        title: 'Twitcher TV Status',
+        description: 'Provides interesting channel from twitch.',
+        href: './projects/fcc/twitch/index.html',
+        img_src: './img/fcc/twitch-tv.jpg',
+        img_alt: 'Twich TV Status site image'
+    },   
 
     francysc: {
         title: 'Francysk Skaryna',

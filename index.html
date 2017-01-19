@@ -6,61 +6,94 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <title>To Development And Beyond!</title>
-    <link rel="stylesheet" href="./modules/bootstrap/css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>    
 
     <header class="header">
         <div class="container">
-            <section class="micro-clearfix:after">
-                <div class="profile-img"></div>
+            <section class="clearfix">
+                <div class="profile-img pull-left"></div>
 
                 <h1>Gleb Shaucou</h1>
                 <h4>Front-End Developer</h4>
             </section>
             
-            <article>
+            <section>
                 <p>Short description of me</p>
                 <ul>
                     <li>Web development: JavaScript/ES6, HTML/HTML5, CSS/CSS3, jQuery, Lodash</li>
                     <li>IDE: Atom, Sublime Text</li>
                     <li>Tools and utilities: Git, GitHub</li>
-                    <li>Technologies: Gulp, Webpack, AJAX, Bootstrap, SASS, Redux</li>
+                    <li>Technologies: React, Gulp, Webpack, AJAX, Bootstrap, SASS, Redux</li>
+                    <li>Testing: Mocha</li>
                     <li>English Proficiency: Intermediate</li>
                     <li>German Proficiency: Intermediate</li>
                 </ul>
-            </article>
+            </section>
+
+            <section class="contacts">
+                <h3>Write to me</h3>
+                <ul class="list-inline">  
+                    <li>
+                        <a href="mailto:shevcov.gleb@gmail.com" target="_blank">
+                            <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>                  
+                    <li>
+                        <a href="https://www.linkedin.com/in/hleb-shautsou-1726ba109" target="_blank">
+                            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/gleb.shevcov" target="_blank">
+                            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>                    
+                </ul> 
+
+                <h3>Be my friend</h3>
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://github.com/GlebShaucou" target="_blank">
+                            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/lamsbeg" target="_blank">
+                            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>                 
+            </section>
         </div>
     </header>
 
     <main class="main">
-        <div class="container">
-            <section id="rss-projects" class="rss-projects">
-                <h2>My projects for Rolling Scopes School</h2>                    
-                <p>Short description of our projects.</p>
-                
+        <div class="container clearfix">
+            <section class="rss-projects pull-left projects-section">
+                <h2 class="section-title centered-text">Projects for RSS</h2>                    
+                <p class="section-description">Links and short description of projects I have made for Rolling Scopes School Minsk.</p>
+                <section id="rss-projects" class="projects-subsection">
+                    
+                </section>
             </section>      
 
-            <section id="fcc-projects" class="fcc-projects">
-                <h2>My projects for FreeCodeCamp</h2>
-                <p>Short description of our projects.</p>
-                
+            <section class="fcc-projects pull-left projects-section">
+                <h2 class="section-title centered-text">Projects for FCC</h2>
+                <p class="section-description">Links and short description of projects I have made for FreeCodeCamp.</p>
+                <section id="fcc-projects" class="projects-subsection">
+                    
+                </section>
             </section>            
         </div>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <h2>Contacts</h2>
-            <ul class="list-inline">
-                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-                <li><i class="fa fa-github" aria-hidden="true"></i></li>
-                <li><i class="fa fa-google-plus-official" aria-hidden="true"></i></li>
-            </ul>                
-            <p>@ All rights reserved. Website was created by <span>Gleb Shaucou</span></p>                
+        <div class="container centered-text">             
+            <p class="copyrights">@ All rights reserved. Website was created by <span>Gleb Shaucou</span></p>                
         </div>
     </footer>    
     

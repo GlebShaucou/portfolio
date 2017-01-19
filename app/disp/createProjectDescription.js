@@ -14,6 +14,7 @@ function createProjectDescription(data) {
     img.classList.add('pull-left');
 
     a.setAttribute('href', data.href);
+    a.setAttribute('target', '_blank');
     a.textContent = data.title;
 
     h3.appendChild(a);
