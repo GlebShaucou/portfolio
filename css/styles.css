@@ -1,0 +1,38 @@
+html {
+    position: relative; /* Sticky footer styles */
+    min-height: 100%; /* Sticky footer styles */
+}
+
+body {
+    margin-bottom: 200px; /* Margin bottom by footer height, Sticky footer styles */
+    font-family: 'Lato', sans-serif;
+    background-color: #dedede;
+}
+
+.container {
+    max-width: 800px;
+    background-color: #ffffff;
+}
+
+.project-info {
+    margin-bottom: 10px;
+}
+
+.projects-img {
+    width: 200px;
+    height: 150px;
+    border: 1px solid #c5c5c5;
+    margin-right: 20px;
+}
+
+.footer {
+    position: absolute; /* Sticky footer styles */
+    bottom: 0; /* Sticky footer styles */
+    width: 100%; /* Sticky footer styles */
+    /* Set the fixed height of the footer here */
+    height: 200px; /* Sticky footer styles */
+}
+
+.footer .container {
+    min-height: 100%;
+}

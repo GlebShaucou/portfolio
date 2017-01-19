@@ -8,74 +8,57 @@
     <title>To Development And Beyond!</title>
     <link rel="stylesheet" href="./modules/bootstrap/css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>    
-    <div class="container">
-        <div class="row info">
-            <section class="col-lg-12">
 
-                <header>
-                    <h1>Gleb Shaucou</h1>
-                    <p>Front End Developer</p>
-                </header>
-                <article>
-                    <p></p>
-                    <ul>
-                        <li>Web development: JavaScript/ES6, HTML/HTML5, CSS/CSS3, jQuery, Lodash</li>
-                        <li>IDE: Atom, Sublime Text</li>
-                        <li>Tools and utilities: Git, GitHub</li>
-                        <li>Technologies: Gulp, Webpack, AJAX, Bootstrap, SASS, Redux</li>
-                        <li>English Proficiency: Intermediate</li>
-                        <li>German Proficiency: Intermediate</li>
-                    </ul>
-                </article>
-
-            </section>
+    <header class="header">
+        <div class="container">
+            <h1>Gleb Shaucou</h1>
+            <article>
+                <p>Short description of me</p>
+                <ul>
+                    <li>Web development: JavaScript/ES6, HTML/HTML5, CSS/CSS3, jQuery, Lodash</li>
+                    <li>IDE: Atom, Sublime Text</li>
+                    <li>Tools and utilities: Git, GitHub</li>
+                    <li>Technologies: Gulp, Webpack, AJAX, Bootstrap, SASS, Redux</li>
+                    <li>English Proficiency: Intermediate</li>
+                    <li>German Proficiency: Intermediate</li>
+                </ul>
+            </article>
         </div>
+    </header>
 
-        <div class="portfolio">
-            <section>
-                <header>
-                    <h2>My projects for Rolling Scopes School</h2>
-                </header>
-                <article>
-                    <p>Short description of our projects.</p>
-                    <section id="rss-projects"></section>
-                </article>
+    <main class="main">
+        <div class="container">
+            <section id="rss-projects" class="rss-projects">
+                <h2>My projects for Rolling Scopes School</h2>                    
+                <p>Short description of our projects.</p>
+                
             </section>      
-            <section>
-                <header>
-                    <h2>My projects for FreeCodeCamp</h2>
-                </header>
-                <article>
-                    <p>Short description of our projects.</p>
-                    <section id="projects"></section>
-                </article>
+
+            <section id="fcc-projects" class="fcc-projects">
+                <h2>My projects for FreeCodeCamp</h2>
+                <p>Short description of our projects.</p>
+                
             </section>            
         </div>
-    </div>
+    </main>
 
     <footer class="footer">
         <div class="container">
-            <div class="row">
-                
-                <div class="col-lg-12">
-                    <h2>Contacts</h2>
-                    <ul class="list-inline">
-                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-github" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-google-plus-official" aria-hidden="true"></i></li>
-                    </ul>                
-                    <p>@ All rights reserved. Website was created by <span>Gleb Shaucou</span></p>
-                </div>
-
-            </div>
+            <h2>Contacts</h2>
+            <ul class="list-inline">
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                <li><i class="fa fa-github" aria-hidden="true"></i></li>
+                <li><i class="fa fa-google-plus-official" aria-hidden="true"></i></li>
+            </ul>                
+            <p>@ All rights reserved. Website was created by <span>Gleb Shaucou</span></p>                
         </div>
     </footer>    
     
     <script src="https://use.fontawesome.com/4d320bc0d5.js"></script>
-    <script src="./scripts/scripts.js"></script>
+    <script src="./dist/bundle.js"></script>
 </body>
 </html>

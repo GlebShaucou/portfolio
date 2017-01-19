@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio webpage",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GlebShaucou/portfolio.git"
+  },
+  "author": "Gleb Shaucou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GlebShaucou/portfolio/issues"
+  },
+  "homepage": "https://github.com/GlebShaucou/portfolio#readme",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-env": "^1.1.5",
+    "webpack": "^1.14.0"
+  }
+}
