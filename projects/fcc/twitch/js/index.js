@@ -1,3 +1,5 @@
+// ?client_id=ng7vquupmtx9eq88ih6xz1rvfc91ns
+
 $(document).ready(function() {
   var mainUrl = "https://api.twitch.tv/kraken/streams/";
   var twitchUsers = ["freecodecamp", "storbeck", "terakilobyte", "habathcx", "RobotCaleb", "thomasballinger", "noobs2ninjas", "beohoff", "brunofin", "comster404", "sc2proleague", "shroud", "screwattack", "esl_sc2", "ogamingsc2"];

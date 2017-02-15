@@ -11,5 +11,9 @@
         if (event.target.textContent === 'Clear') {
             display.textContent = '';    
         }
+
+        if (event.target.classList.contains('result')) {
+            display.textContent = eval(display.textContent);
+        }
     }); 
 })();
