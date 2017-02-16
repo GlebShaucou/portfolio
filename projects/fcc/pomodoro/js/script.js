@@ -10,50 +10,52 @@ var fullTimeSec;
 var perc;
 //уменьшение времени relax
 function relaxTimeLower() {
-  if(init == 1) {
-    relaxTime = parseInt($('.relax-time').html(), 10);
-  
-  if(relaxTime > 1) {
-    relaxTime = relaxTime - 1;
-    $('.relax-time').html(relaxTime);
-  } else {
-    alert("Short break - is all what you need");
-  }
-  }   
+    if(init == 1) {
+        relaxTime = parseInt($('.relax-time').html(), 10);
+
+        if(relaxTime > 1) {
+            relaxTime = relaxTime - 1;
+            $('.relax-time').html(relaxTime);
+        } else {
+            alert("Short break - is all what you need");
+        }
+    }   
 }  
 //увеличение времени relax
 function relaxTimeUpper() {
-  if(init == 1) {
-    relaxTime = parseInt($('.relax-time').html(), 10);
-  
-  if(relaxTime < 60) {
-    relaxTime = relaxTime + 1;
-    $('.relax-time').html(relaxTime);
-  } else {
-    alert("Just go home, Buddy");
-  }
-  }   
+    if(init == 1) {
+        relaxTime = parseInt($('.relax-time').html(), 10);
+
+        if(relaxTime < 60) {
+            relaxTime = relaxTime + 1;
+            $('.relax-time').html(relaxTime);
+        } else {
+            alert("Just go home, Buddy");
+        }
+    }   
 }
 //уменьшение времени pomodoro
 function pomodoroTimeLower() {
-  //clearInterval(intervalId);
-  if(init == 1) {
-    init = 1;
-    timeSec = 0;
-  pomodoroTime = parseInt($('.pomodoro-time').html(), 10);
-    fullTimeSec = parseInt($(".pomodoro-time").html(), 10) * 60;
-  
-  if(pomodoroTime > 1) {
-    pomodoroTime = pomodoroTime - 1;
-    $('.pomodoro-time').html(pomodoroTime);
-    if(pomodoroTime < 10) {
-      $('.timer').html("0" + pomodoroTime + ':00');
-    } else {
-      $('.timer').html(pomodoroTime + ':00');
-    }
-  } else {
-    alert("Don't be a kitten!");
-  }}   
+    //clearInterval(intervalId);
+    if(init == 1) {
+        init = 1;
+        timeSec = 0;
+        pomodoroTime = parseInt($('.pomodoro-time').text(), 10);
+        fullTimeSec = parseInt($(".pomodoro-time").text(), 10) * 60;
+
+        if(pomodoroTime > 1) {
+            pomodoroTime = pomodoroTime - 1;
+            $('.pomodoro-time').html(pomodoroTime);
+
+            if(pomodoroTime < 10) {
+                $('.timer').html("0" + pomodoroTime + ':00');
+            } else {
+                $('.timer').html(pomodoroTime + ':00');
+            }
+        } else {
+            alert("Don't be a kitten!");
+        }
+    }   
 }  
 //увеличение времени pomodoro
 function pomodoroTimeUpper() {
@@ -79,6 +81,7 @@ function pomodoroTimeUpper() {
   }
  }   
 }  
+
 //функция для отсчета обратного времени (таймера)
 function pomodoroTimer() {
  /*arr = $(".timer").html().split(":");
@@ -132,52 +135,52 @@ function pomodoroTimer() {
 		timeSec = timeSec - 1;
 		if(timeMin > 9 && timeSec > 9) {
 			str = timeMin.toString() + ":" + timeSec.toString();
-      $(".timer").html(str);
+      $(".timer").text(str);
 		} else if (timeMin > 9 && timeSec < 10) {
 			str = timeMin.toString() + ":" + "0" + timeSec.toString();
-      $(".timer").html(str);
+      $(".timer").text(str);
 		} else if(timeMin < 10 && timeSec < 10) {
 			str = "0" + timeMin.toString() + ":" + "0" + timeSec.toString();
-      $(".timer").html(str);
+      $(".timer").text(str);
 		} else {
       str = "0" + timeMin.toString() + ":" + timeSec.toString();
-      $(".timer").html(str);
+      $(".timer").text(str);
     }
 	}
 }
 //сброс времени таймера
 function resetTimer() {
-  clearInterval(intervalId);
-  pomodoroTime = $('.pomodoro-time').html();
-  fullTimeSec = parseInt($(".pomodoro-time").html(), 10) * 60;
-  
-  if(pomodoroTime < 10) {
-      $('.timer').html("0" + pomodoroTime + ':00');
+    clearInterval(intervalId);
+    pomodoroTime = $('.pomodoro-time').text();
+    fullTimeSec = parseInt($(".pomodoro-time").text(), 10) * 60;
+
+    if(pomodoroTime < 10) {
+        $('.timer').text("0" + pomodoroTime + ':00');
     } else {
-      $('.timer').html(pomodoroTime + ':00');
+        $('.timer').text(pomodoroTime + ':00');
     }
-  
-  $(".lab").html("Business Time");
-  init = 1;
-  timeSec = 0;
+
+    $(".lab").text("Business Time");
+    init = 1;
+    timeSec = 0;
 }
 //старт таймера
 function startTimer() {
-  intervalId = setInterval(pomodoroTimer, 1000);
-  fullTimeSec = parseInt($(".pomodoro-time").html(), 10) * 60;
+    intervalId = setInterval(pomodoroTimer, 1000);
+    fullTimeSec = parseInt($(".pomodoro-time").text(), 10) * 60;
 }
 //остановка таймера
 function stopTimer() {
-  clearInterval(intervalId);
+    clearInterval(intervalId);
 }
 //функция паузы
 function startStopTimer() {
-  if(init == 1) {
-    startTimer();
-    init = 2;
-    $('.btn-1').disable = true;
-  } else {
-    stopTimer();
-    init = 1;
-  }
+    if(init == 1) {
+        startTimer();
+        init = 2;
+        $('.btn-1').disable = true;
+    } else {
+        stopTimer();
+        init = 1;
+    }
 }

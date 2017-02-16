@@ -11,7 +11,7 @@ const FCCProjects = {
         title: 'Wikipedia Search',
         description: 'Provides search results from Wikipedia via Wikipedia Api.',
         href: './projects/fcc/wikisearch/index.html',
-        img_src: './img/fcc/wiki-search.jpeg',
+        img_src: './img/fcc/wiki-search.png',
         img_alt: 'Wikipedia Search site image'
     },
 
